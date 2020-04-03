@@ -1,4 +1,5 @@
 from sqlite3 import connect, Row
+from typing import List
 
 db_path = ""
 
