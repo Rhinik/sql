@@ -1,10 +1,9 @@
 from sqlite3 import connect, Row
-from DotDict import DotDict
-from typing import List
-import config
+
+db_path = ""
 
 # SQLite3 connection
-conn = connect(config.load().pathes.db)
+conn = connect(db_path)
 conn.row_factory = Row
 cursor = conn.cursor()
 
